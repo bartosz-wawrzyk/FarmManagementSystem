@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.farmmanagementsystem.PlotController">
+   <children>
+      <TableView fx:id="tableviewPlot" layoutX="53.0" layoutY="52.0" onMouseClicked="#select" prefHeight="257.0" prefWidth="695.0" stylesheets="@style/accountDesign.css" AnchorPane.topAnchor="50.0">
+         <columns>
+            <TableColumn fx:id="col_id" text="ID działki" />
+            <TableColumn fx:id="col_number" prefWidth="150.0" text="Numer działki" />
+            <TableColumn fx:id="col_area" prefWidth="150.0" text="Powierzchnia" />
+            <TableColumn fx:id="col_cropping" prefWidth="210.0" text="Uprawa" />
+            <TableColumn fx:id="col_year" prefWidth="110.0" text="Rok" />
+         </columns>
+      </TableView>
+      <Button layoutX="762.0" layoutY="24.0" mnemonicParsing="false" onAction="#exit" prefHeight="30.0" prefWidth="40.0" styleClass="exit" stylesheets="@style/loginDesign.css" text="X" textFill="WHITE" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_add" layoutX="86.0" layoutY="653.0" mnemonicParsing="false" onAction="#insert" styleClass="button-add" stylesheets="@style/accountDesign.css" text="Dodaj" AnchorPane.bottomAnchor="20.0" />
+      <Button fx:id="button_delete" layoutX="656.0" layoutY="653.0" mnemonicParsing="false" onAction="#delete" styleClass="button-delete" stylesheets="@style/accountDesign.css" text="Usuń" AnchorPane.bottomAnchor="20.0" />
+      <Button fx:id="button_edit" layoutX="274.0" layoutY="653.0" mnemonicParsing="false" onAction="#update" styleClass="button-edit" stylesheets="@style/accountDesign.css" text="Edytuj" AnchorPane.bottomAnchor="20.0" />
+      <Button fx:id="button_clear" layoutX="455.0" layoutY="653.0" mnemonicParsing="false" onAction="#clear" styleClass="button-clear" stylesheets="@style/accountDesign.css" text="Wyczyść" AnchorPane.bottomAnchor="20.0" />
+      <TextField fx:id="txt_id" layoutX="131.0" layoutY="358.0" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" AnchorPane.leftAnchor="125.0" />
+      <TextField fx:id="txt_area" layoutX="125.0" layoutY="431.0" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+      <TextField fx:id="txt_number" layoutX="486.0" layoutY="358.0" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" AnchorPane.rightAnchor="125.0" />
+      <TextField fx:id="txt_cropping" layoutX="486.0" layoutY="431.0" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+      <Label layoutX="257.0" layoutY="333.0" prefHeight="16.0" prefWidth="57.0" styleClass="text-design" stylesheets="@style/accountDesign.css" text="ID działki">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="407.0" styleClass="text-design" stylesheets="@style/accountDesign.css" text="Uprawa">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="407.0" styleClass="text-design" stylesheets="@style/accountDesign.css" text="Powierzchnia">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="487.0" layoutY="333.0" styleClass="text-design" stylesheets="@style/accountDesign.css" text="Numer działki">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_year" layoutX="125.0" layoutY="496.0" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+      <Label layoutX="290.0" layoutY="473.0" styleClass="text-design" stylesheets="@style/accountDesign.css" text="Rok">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

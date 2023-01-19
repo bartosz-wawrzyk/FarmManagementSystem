@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.farmmanagementsystem.ExpensesController">
+   <children>
+      <TableView fx:id="tableviewExpanses" layoutX="53.0" layoutY="52.0" onMouseClicked="#select" prefHeight="257.0" prefWidth="695.0" stylesheets="@style/accountDesign.css" AnchorPane.topAnchor="50.0">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="70.0" text="ID wydatku" />
+            <TableColumn fx:id="col_value" prefWidth="100.0" text="Wartość" />
+            <TableColumn fx:id="col_date" prefWidth="140.0" text="Data" />
+            <TableColumn fx:id="col_name" prefWidth="120.0" text="Nazwa" />
+            <TableColumn fx:id="col_count" prefWidth="90.0" text="Ilość" />
+            <TableColumn fx:id="col_type" prefWidth="60.0" text="Typ" />
+            <TableColumn fx:id="col_classification" prefWidth="110.0" text="Klasyfikacja" />
+         </columns>
+      </TableView>
+      <Button layoutX="752.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" prefHeight="30.0" prefWidth="40.0" styleClass="exit" stylesheets="@style/loginDesign.css" text="X" textFill="WHITE" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_add" layoutX="86.0" layoutY="653.0" mnemonicParsing="false" onAction="#insert" styleClass="button-add" stylesheets="@style/accountDesign.css" text="Dodaj" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="659.0" />
+      <Button fx:id="button_delete" layoutX="656.0" layoutY="653.0" mnemonicParsing="false" onAction="#delete" styleClass="button-delete" stylesheets="@style/accountDesign.css" text="Usuń" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="93.0" />
+      <Button fx:id="button_edit" layoutX="274.0" layoutY="653.0" mnemonicParsing="false" onAction="#update" styleClass="button-edit" stylesheets="@style/accountDesign.css" text="Edytuj" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="469.0" />
+      <Button fx:id="button_clear" layoutX="455.0" layoutY="653.0" mnemonicParsing="false" onAction="#clear" styleClass="button-clear" stylesheets="@style/accountDesign.css" text="Wyczyść" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="271.0" />
+      <TextField fx:id="txt_id" layoutX="113.0" layoutY="358.0" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" AnchorPane.leftAnchor="125.0" />
+      <TextField fx:id="txt_count" layoutX="125.0" layoutY="431.0" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" AnchorPane.leftAnchor="125.0" />
+      <TextField fx:id="txt_name" layoutX="486.0" layoutY="358.0" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" AnchorPane.rightAnchor="125.0" />
+      <TextField fx:id="txt_value" layoutX="486.0" layoutY="431.0" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" AnchorPane.rightAnchor="125.0" />
+      <DatePicker fx:id="date_expiration" layoutX="296.0" layoutY="569.0" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+      <ComboBox fx:id="combobox_type" layoutX="125.0" layoutY="496.0" prefWidth="189.0" promptText="Typ" stylesheets="@style/accountDesign.css" AnchorPane.leftAnchor="125.0" />
+      <ComboBox fx:id="combobox_category" layoutX="486.0" layoutY="496.0" prefWidth="189.0" promptText="Klasyfikacja" stylesheets="@style/accountDesign.css" />
+      <Label layoutX="244.0" layoutY="333.0" styleClass="text-design" stylesheets="@style/accountDesign.css" text="ID wydatku">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="407.0" styleClass="text-design" stylesheets="@style/accountDesign.css" text="Wartość">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="407.0" styleClass="text-design" stylesheets="@style/accountDesign.css" text="Ilość">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="391.0" layoutY="546.0" styleClass="text-design" stylesheets="@style/accountDesign.css" text="Data">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="333.0" styleClass="text-design" stylesheets="@style/accountDesign.css" text="Nazwa">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+   </children>
+
+</AnchorPane>

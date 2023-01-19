@@ -1,0 +1,144 @@
+.menudesign{
+    -fx-background-color: linear-gradient(to bottom right, #168179, #25894A);
+}
+.buttondesign{
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+    -fx-font-size: 14px;
+}
+.buttondesign:hover{
+    -fx-background-color: linear-gradient(to bottom right, #126963, #1C6F3B);
+}
+.textfield-record-design{
+    -fx-background-color:transparent;
+    -fx-background-radius:10px;
+    -fx-border-color: linear-gradient(to bottom right, #168179, #25894A);
+    -fx-border-radius:10px;
+    -fx-font-size:15px;
+}
+.table-view{
+    -fx-background-color: transparent;
+    -fx-padding: 0px;
+    -fx-border-color: linear-gradient(to bottom right, #168179, #25894A);
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right, #168179, #25894A);
+    -fx-background-radius: 8px 8px 0px 0px;
+    -fx-background-insets: 0 0 0 0;
+}
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+}
+.table-view .column-header .label{
+    -fx-text-fill:#fff;
+    -fx-font-family:"Arial";
+}
+.table-view .table-column{
+    -fx-alignment: CENTER;
+}
+.button-add{
+    -fx-background-color: #296CC8;
+    -fx-border-radius: 8px;
+    -fx-cursor:hand;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
+.button-add:hover{
+    -fx-background-color: #1D4F92;
+}
+.button-edit{
+    -fx-background-color: #17B92D;
+    -fx-border-radius: 8px;
+    -fx-cursor:hand;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
+.button-edit:hover{
+    -fx-background-color: #108320;
+}
+.button-delete{
+    -fx-background-color: #EC2424;
+    -fx-border-radius: 8px;
+    -fx-cursor:hand;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
+.button-delete:hover{
+    -fx-background-color: #B11A1A;
+}
+.button-clear{
+    -fx-background-color: #C618EC;
+    -fx-border-radius: 8px;
+    -fx-cursor:hand;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
+.button-clear:hover{
+    -fx-background-color: #9010AC;
+}
+.combo-box{
+    -fx-background-color:transparent;
+    -fx-background-radius:10px;
+    -fx-border-color: linear-gradient(to bottom right, #168179, #25894A);
+    -fx-border-radius:10px;
+    -fx-font-size:15px;
+}
+.text-design{
+    -fx-text-fill: linear-gradient(to bottom right, #168179, #25894A);
+}
+.main-background{
+    -fx-background-color: linear-gradient(to bottom right, #168179, #25894A);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.75), 13, 0, 0, 0);
+}
+.text-main{
+    -fx-text-fill: white;
+    -fx-font-size:20px;
+}
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 6, 0, 0, 0);
+}
+.areachart-design{
+    -fx-background-color: #fff;
+    -fx-background-radius: 8px;
+}
+.button-design-calculator{
+    -fx-background-color: linear-gradient(to bottom right, #168179, #25894A);
+    -fx-cursor:hand;
+    -fx-font-family: Arial;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+.button-design-calculator:hover{
+    -fx-background-color: linear-gradient(to bottom right, #126963, #1C6F3B);
+}
+.calculator-info-background{
+    -fx-background-color: #424242;
+    -fx-font-family: Arial;
+    -fx-text-fill: white;
+}
+.calculator-button-info{
+    -fx-background-color: #424242;
+    -fx-text-fill: white;
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+}
+.weather-background{
+    -fx-background-color: linear-gradient(to bottom right, #168179, #25894A);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.75), 20, 0, 0, 0);
+}
+.combo-box-price > .list-cell {
+    -fx-background-color: #909090;
+    -fx-font-family: Arial;
+    -fx-text-fill: white;
+}
+.calculator-pane{
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.75), 20, 0, 0, 0);
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.farmmanagementsystem.AccountController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="200.0" styleClass="menudesign" stylesheets="@style/accountDesign.css">
+         <children>
+            <Text fill="WHITE" layoutX="61.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Witaj">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="36.0" />
+               </font>
+            </Text>
+            <Label fx:id="label_name" layoutX="74.0" layoutY="55.0" text="bartek" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_garage" layoutX="31.0" layoutY="159.0" mnemonicParsing="false" onAction="#changePane" prefHeight="40.0" prefWidth="140.0" styleClass="buttondesign" stylesheets="@style/accountDesign.css" text="Garaż" textFill="WHITE" />
+            <Button fx:id="button_home" layoutX="31.0" layoutY="99.0" mnemonicParsing="false" onAction="#changePane" prefHeight="40.0" prefWidth="140.0" styleClass="buttondesign" stylesheets="@style/accountDesign.css" text="Strona główna" textFill="WHITE" />
+            <Button fx:id="button_warehouse" layoutX="31.0" layoutY="279.0" mnemonicParsing="false" onAction="#changePane" prefHeight="40.0" prefWidth="140.0" styleClass="buttondesign" stylesheets="@style/accountDesign.css" text="Magazyn" textFill="WHITE" />
+            <Button fx:id="button_logout" layoutX="30.0" layoutY="646.0" mnemonicParsing="false" onAction="#logout" prefHeight="40.0" prefWidth="140.0" styleClass="buttondesign" stylesheets="@style/accountDesign.css" text="Wyloguj się" textFill="WHITE" />
+            <Button fx:id="button_plot" layoutX="31.0" layoutY="459.0" mnemonicParsing="false" onAction="#changePane" prefHeight="40.0" prefWidth="140.0" styleClass="buttondesign" stylesheets="@style/accountDesign.css" text="Działki" textFill="WHITE" />
+            <Line endX="90.0" layoutX="91.0" layoutY="89.0" startX="-70.0" />
+            <Line endX="90.0" layoutX="89.0" layoutY="635.0" startX="-70.0" />
+            <Button fx:id="button_breeding" layoutX="31.0" layoutY="219.0" mnemonicParsing="false" onAction="#changePane" prefHeight="40.0" prefWidth="140.0" styleClass="buttondesign" stylesheets="@style/accountDesign.css" text="Hodowla" textFill="WHITE" />
+            <Button fx:id="button_income" layoutX="31.0" layoutY="339.0" mnemonicParsing="false" onAction="#changePane" prefHeight="40.0" prefWidth="140.0" styleClass="buttondesign" stylesheets="@style/accountDesign.css" text="Przychody" textFill="WHITE" />
+            <Button fx:id="button_expenses" layoutX="31.0" layoutY="399.0" mnemonicParsing="false" onAction="#changePane" prefHeight="40.0" prefWidth="140.0" styleClass="buttondesign" stylesheets="@style/accountDesign.css" text="Wydatki" textFill="WHITE" />
+            <Button fx:id="button_calculator" layoutX="31.0" layoutY="519.0" mnemonicParsing="false" onAction="#changePane" prefHeight="40.0" prefWidth="140.0" styleClass="buttondesign" stylesheets="@style/accountDesign.css" text="Kalkulator" textFill="WHITE" />
+            <Button fx:id="button_module" layoutX="31.0" layoutY="579.0" mnemonicParsing="false" onAction="#changePane" prefHeight="40.0" prefWidth="140.0" styleClass="buttondesign" stylesheets="@style/accountDesign.css" text="Moduły" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane_main" layoutX="200.0" prefHeight="700.0" prefWidth="800.0" />
+   </children>
+</AnchorPane>

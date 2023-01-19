@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.farmmanagementsystem.CalculatorController">
+   <Button layoutX="756.0" layoutY="24.0" mnemonicParsing="false" onAction="#exit" prefHeight="30.0" prefWidth="40.0" styleClass="exit" stylesheets="@style/loginDesign.css" text="X" textFill="WHITE" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+   <Button fx:id="button_seedrate" layoutX="34.0" layoutY="90.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="180.0" styleClass="button-design-calculator" stylesheets="@style/accountDesign.css" text="Kalkulator normy wysiewu" textFill="WHITE" wrapText="true">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <Button fx:id="button_plantstocking" layoutX="34.0" layoutY="196.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="180.0" styleClass="button-design-calculator" stylesheets="@style/accountDesign.css" text="Kalkulator obsady roślin" textFill="WHITE" wrapText="true">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <Button fx:id="button_spraying" layoutX="34.0" layoutY="312.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="180.0" styleClass="button-design-calculator" stylesheets="@style/accountDesign.css" text="Kalkulator oprysku" textFill="WHITE" wrapText="true">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <Button fx:id="button_dryingcorn" layoutX="34.0" layoutY="428.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="180.0" styleClass="button-design-calculator" stylesheets="@style/accountDesign.css" text="Kalkulator suszenia kukurydzy" textFill="WHITE" wrapText="true">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <AnchorPane fx:id="pane_seedrate" layoutX="275.0" layoutY="90.0" prefHeight="430.0" prefWidth="500.0" styleClass="calculator-pane" stylesheets="@style/accountDesign.css" visible="false">
+      <children>
+         <TextField fx:id="txt_seeds" layoutX="14.0" layoutY="159.0" promptText="Czystość nasion (%)" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+         <TextField fx:id="txt_mtz" layoutX="14.0" layoutY="25.0" promptText="MTZ (g)" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+         <TextField fx:id="txt_cast" layoutX="14.0" layoutY="70.0" promptText="Obsada (szt./m2)" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+         <TextField fx:id="txt_force" layoutX="14.0" layoutY="114.0" promptText="Siła kiełkowania (%)" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+         <Button fx:id="button_calculate" layoutX="14.0" layoutY="209.0" mnemonicParsing="false" onAction="#calculateSeedRate" styleClass="button-design-calculator" stylesheets="@style/accountDesign.css" text="Oblicz" textFill="WHITE">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+         <Label fx:id="label_result" alignment="CENTER" layoutX="15.0" layoutY="263.0" prefHeight="57.0" prefWidth="189.0" textAlignment="CENTER">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Button fx:id="button_calculate1" layoutX="109.0" layoutY="209.0" mnemonicParsing="false" onAction="#clear" styleClass="button-design-calculator" stylesheets="@style/accountDesign.css" text="Wyczyść" textFill="WHITE">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+         <Button fx:id="button_info" layoutX="267.0" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="217.0" styleClass="calculator-button-info" stylesheets="@style/accountDesign.css" text="Pokaż legendę">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+         <AnchorPane fx:id="pane_info" layoutX="267.0" layoutY="67.0" prefHeight="176.0" prefWidth="217.0" styleClass="calculator-info-background" stylesheets="@style/accountDesign.css" visible="false">
+            <children>
+               <Label layoutX="5.0" layoutY="25.0" text="Masa tysiąca ziaren (g)" textFill="WHITE" />
+               <Label layoutX="5.0" layoutY="2.0" prefHeight="25.0" prefWidth="95.0" text="MTZ" textFill="WHITE">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </Label>
+               <Label layoutX="5.0" layoutY="52.0" text="Obsada" textFill="WHITE">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </Label>
+               <Label layoutX="5.0" layoutY="67.0" prefHeight="35.0" prefWidth="212.0" text="liczba roślin na jednostce powierzchni (szt./m2)" textFill="WHITE" wrapText="true" />
+               <Label layoutX="5.0" layoutY="118.0" text="Siła kiełkowania" textFill="WHITE">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </Label>
+               <Label layoutX="5.0" layoutY="135.0" prefHeight="35.0" prefWidth="198.0" text="zdolność kiełkowania ziarna określona w %" textFill="WHITE" wrapText="true" />
+            </children>
+         </AnchorPane>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="pane_cast" layoutX="275.0" layoutY="90.0" prefHeight="430.0" prefWidth="500.0" styleClass="calculator-pane" stylesheets="@style/accountDesign.css" visible="false">
+      <children>
+         <TextField fx:id="txt_width" layoutX="120.0" layoutY="155.0" prefHeight="35.0" prefWidth="260.0" promptText="Szerokość międzyrzędzia (cm)" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+         <TextField fx:id="txt_length" layoutX="120.0" layoutY="104.0" prefHeight="35.0" prefWidth="260.0" promptText="Długość pomiaru (cm)" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+         <TextField fx:id="txt_amount" layoutX="120.0" layoutY="51.0" prefHeight="35.0" prefWidth="260.0" promptText="Ilość rośln na długość pomiaru (szt.)" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+         <Button layoutX="120.0" layoutY="203.0" mnemonicParsing="false" onAction="#calculatePlantStocking" styleClass="button-design-calculator" stylesheets="@style/accountDesign.css" text="Oblicz" />
+         <Button layoutX="285.0" layoutY="203.0" mnemonicParsing="false" onAction="#clearPlantStocking" styleClass="button-design-calculator" stylesheets="@style/accountDesign.css" text="Wyczyść" />
+         <Label fx:id="label_resultCast" alignment="CENTER" layoutX="120.0" layoutY="253.0" prefHeight="65.0" prefWidth="260.0" textAlignment="CENTER">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="pane_spraying" layoutX="275.0" layoutY="90.0" prefHeight="430.0" prefWidth="500.0" styleClass="calculator-pane" stylesheets="@style/accountDesign.css" visible="false">
+      <children>
+         <TextField fx:id="spraying_dose" layoutX="156.0" layoutY="43.0" promptText="Dawka ŚOR (l/ha)" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+         <TextField fx:id="spraying_area" layoutX="156.0" layoutY="89.0" promptText="Areał pola (ha)" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+         <TextField layoutX="156.0" layoutY="133.0" promptText="Dawka wody (l/ha)" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+         <TextField layoutX="156.0" layoutY="182.0" promptText="Pojemnośc opryskiwacza (l)" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+         <Button layoutX="156.0" layoutY="227.0" mnemonicParsing="false" onAction="#SprayingCalculate" styleClass="button-design-calculator" stylesheets="@style/accountDesign.css" text="Oblicz" />
+         <Button layoutX="251.0" layoutY="227.0" mnemonicParsing="false" onAction="#SprayingClear" styleClass="button-design-calculator" stylesheets="@style/accountDesign.css" text="Wyczyść" />
+         <Label fx:id="spraying_result" alignment="CENTER" layoutX="157.0" layoutY="272.0" prefHeight="50.0" prefWidth="189.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="pane_dryingcorn" layoutX="275.0" layoutY="90.0" prefHeight="430.0" prefWidth="500.0" styleClass="calculator-pane" stylesheets="@style/accountDesign.css" visible="false">
+      <children>
+         <TextField fx:id="corn_mass" layoutX="155.0" layoutY="97.0" prefWidth="210.0" promptText="Masa początkowa (kg)" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+         <TextField fx:id="corn_initial" layoutX="155.0" layoutY="140.0" prefHeight="33.0" prefWidth="210.0" promptText="Wilgotnośc początkowa (%)" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+         <TextField fx:id="corn_final" layoutX="155.0" layoutY="182.0" prefWidth="210.0" promptText="Wilgotnośc końcowa (%)" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+         <Button fx:id="corn_calculate" layoutX="156.0" layoutY="221.0" mnemonicParsing="false" onAction="#CornCalculate" styleClass="button-design-calculator" stylesheets="@style/accountDesign.css" text="Oblicz" />
+         <Button fx:id="corn_clear" layoutX="270.0" layoutY="221.0" mnemonicParsing="false" onAction="#CornClear" styleClass="button-design-calculator" stylesheets="@style/accountDesign.css" text="Wyczyść" />
+         <Label fx:id="corn_result" alignment="CENTER" layoutX="155.0" layoutY="267.0" prefHeight="57.0" prefWidth="210.0" textAlignment="CENTER">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+
+</AnchorPane>

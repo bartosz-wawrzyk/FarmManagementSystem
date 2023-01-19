@@ -1,0 +1,42 @@
+/*
+    Design on Login and Sign Up pane
+ */
+.logindesign{
+    -fx-background-color: linear-gradient(to bottom right, #168179, #25894A);
+}
+.textfield-design{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-border-color: linear-gradient(to bottom right, #168179, #25894A);
+    -fx-border-radius: 10px;
+    -fx-text-inner-color: #000;
+}
+.button-design{
+    -fx-background-color: linear-gradient(to bottom right, #168179, #25894A);
+    -fx-background-radius: 20px;
+    -fx-cursor:hand;
+    -fx-font-size: 18px;
+}
+.button-design:hover{
+    -fx-background-color: linear-gradient(to bottom right, #126963, #1C6F3B);
+}
+.hypertext-design{
+    -fx-text-fill: #5158c5;
+    -fx-underline: false;
+    -fx-border-color: transparent;
+}
+.hypertext-design:hover{
+    -fx-underline: true;
+}
+.exit{
+    -fx-background-color: c22c40;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-text-color: white;
+}
+.exit:hover{
+    -fx-background-color: #f15b72;
+}
+.text-design{
+    -fx-text-fill: linear-gradient(to bottom right, #168179, #25894A);
+}

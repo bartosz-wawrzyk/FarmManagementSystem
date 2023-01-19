@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.farmmanagementsystem.BreedingController">
+   <children>
+      <Button layoutX="746.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" prefHeight="30.0" prefWidth="40.0" styleClass="exit" stylesheets="@style/loginDesign.css" text="X" textFill="WHITE" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txt_amount" layoutX="125.0" layoutY="431.0" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" />
+      <TextField fx:id="txt_name" layoutX="491.0" layoutY="358.0" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" AnchorPane.rightAnchor="125.0" />
+      <TextField fx:id="txt_id" layoutX="125.0" layoutY="358.0" styleClass="textfield-record-design" stylesheets="@style/accountDesign.css" AnchorPane.leftAnchor="125.0" />
+      <TableView fx:id="tableview_breeding" layoutX="53.0" layoutY="52.0" onMouseClicked="#select" prefHeight="257.0" prefWidth="695.0" stylesheets="@style/accountDesign.css" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="100.0" text="ID zwierzęcia" />
+          <TableColumn fx:id="col_name" prefWidth="280.0" text="Nazwa" />
+            <TableColumn fx:id="col_amount" prefWidth="150.0" text="Ilość" />
+            <TableColumn fx:id="col_category" minWidth="2.0" prefWidth="160.0" text="Kategoria" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="combobox_category" layoutX="486.0" layoutY="431.0" onAction="#combobox" prefWidth="189.0" promptText="Kategoria" stylesheets="@style/accountDesign.css" />
+      <Button fx:id="button_add" layoutX="86.0" layoutY="653.0" mnemonicParsing="false" onAction="#insert" styleClass="button-add" stylesheets="@style/accountDesign.css" text="Dodaj" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="659.0" />
+      <Button fx:id="button_delete" layoutX="656.0" layoutY="653.0" mnemonicParsing="false" onAction="#delete" styleClass="button-delete" stylesheets="@style/accountDesign.css" text="Usuń" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="93.0" />
+      <Button fx:id="button_edit" layoutX="274.0" layoutY="653.0" mnemonicParsing="false" onAction="#update" styleClass="button-edit" stylesheets="@style/accountDesign.css" text="Edytuj" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="469.0" />
+      <Button layoutX="455.0" layoutY="653.0" mnemonicParsing="false" onAction="#clear" styleClass="button-clear" stylesheets="@style/accountDesign.css" text="Wyczyść" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="271.0" />
+      <Label layoutX="491.0" layoutY="333.0" styleClass="text-design" stylesheets="@style/accountDesign.css" text="Nazwa">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="407.0" styleClass="text-design" stylesheets="@style/accountDesign.css" text="Ilość">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="333.0" styleClass="text-design" stylesheets="@style/accountDesign.css" text="ID zwierzęcia">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Label>
+   </children>
+
+</AnchorPane>
