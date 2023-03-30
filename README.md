@@ -5,3 +5,5 @@ logical user working on the land. Based on the comparison of various systems tha
 and the problems that occur in the economies, the entire application was designed based on
 technologies that build desktop applications. The program has operations related to data
 management, calculations or creating a sowing plan for the next year.
+
+Application written in JavaFX and database SQL
